@@ -5,7 +5,7 @@
 
 	<groupId>com.metamagic</groupId>
 	<artifactId>productms</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>productms</name>
