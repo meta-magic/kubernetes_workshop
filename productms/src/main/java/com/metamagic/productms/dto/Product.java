@@ -7,14 +7,16 @@ public class Product {
 	private String desc;
 	private Double price;
 	private String image;
+	private Integer rating;
 	
-	public Product(String id, String name, String desc, Double price, String image) {
+	public Product(String id, String name, String desc, Double price, String image,Integer rating) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.desc = desc;
 		this.price = price;
 		this.image = image;
+		this.rating = rating;
 	}
 
 	public String getId() {
@@ -35,6 +37,10 @@ public class Product {
 
 	public String getImage() {
 		return image;
+	}
+	
+	public Integer getRating(){
+		return rating;
 	}
 	
 	@Override
