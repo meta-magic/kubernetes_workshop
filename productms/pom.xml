@@ -11,7 +11,7 @@
 	<packaging>war</packaging>
 
 	<name>productms</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot OF PRODUCT MS</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
