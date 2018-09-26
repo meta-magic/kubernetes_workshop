@@ -18,6 +18,7 @@ public class ProductService {
 		productmap.put("3", new Product("3", "Nokia", "Nokia Mobile", 20000.00, ""));
 		productmap.put("4", new Product("4", "MI", "MI Mobile", 4000.00, ""));
 		productmap.put("5", new Product("5", "LG", "LG", 25000.00, ""));
+		productmap.put("6", new Product("6", "JIO", "JIO", 2500.00, ""));
 	}
 	
 	public static ProductService getInstance(){
