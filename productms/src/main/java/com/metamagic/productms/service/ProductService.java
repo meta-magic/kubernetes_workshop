@@ -13,7 +13,7 @@ public class ProductService {
 	private HashMap<String, Product> productmap = new LinkedHashMap<String, Product>();
 	
 	private ProductService(){
-		productmap.put("1", new Product("1", "Apple", "Apple Mobile", 80000.00, ""));
+		productmap.put("1", new Product("1", "Apple", "Apple Mobile", 100000.00, ""));
 		productmap.put("2", new Product("2", "Samsung", "Samsung Mobile", 40000.00, ""));
 		productmap.put("3", new Product("3", "Nokia", "Nokia Mobile", 20000.00, ""));
 		productmap.put("4", new Product("4", "MI", "MI Mobile", 4000.00, ""));
