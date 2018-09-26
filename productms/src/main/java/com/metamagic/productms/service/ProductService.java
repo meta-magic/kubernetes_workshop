@@ -29,4 +29,9 @@ public class ProductService {
 	public Collection<Product> getProducts(){
 		return this.productmap.values();
 	}
+	
+	public Product getProduct(String id){
+		return this.productmap.get(id);
+	}
+	
 }
