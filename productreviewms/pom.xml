@@ -28,7 +28,7 @@
         <docker.image.prefix>metamagicglobal</docker.image.prefix>
 
         <!--Set to name of project-->
-        <docker.image.name>productrviewms</docker.image.name>
+        <docker.image.name>productreviewms</docker.image.name>
 	</properties>
 
 	<dependencies>
