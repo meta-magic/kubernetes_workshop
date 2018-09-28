@@ -2,7 +2,7 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: mysql-pv-volume
-  namespace: sigma
+  namespace: shoppingportal
   labels:
     type: local
 spec:
