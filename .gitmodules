@@ -1,0 +1,6 @@
+[submodule "product_ms"]
+	path = product_ms
+	url = https://github.com/meta-magic/product_ms.git
+[submodule "product_review_ms"]
+	path = product_review_ms
+	url = https://github.com/meta-magic/product_review_ms.git
