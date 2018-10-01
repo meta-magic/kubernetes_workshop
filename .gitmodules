@@ -4,3 +4,6 @@
 [submodule "product_review_ms"]
 	path = product_review_ms
 	url = https://github.com/meta-magic/product_review_ms.git
+[submodule "k8_ui_workshop"]
+	path = k8_ui_workshop
+	url = https://github.com/meta-magic/k8_ui_workshop.git
