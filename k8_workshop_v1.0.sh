@@ -48,7 +48,6 @@ kubectl create -f product_ms/src/main/k8_yaml/product-service.yaml
 
 echo "Create Prodcut Review Microservice deployment and service in k8"
 kubectl create -f product_review_ms/src/main/k8_yaml/productreview-deployment.yaml
-kubectl create -f product_review_ms/src/main/k8_yaml/product-deployment.yaml
 kubectl create -f product_review_ms/src/main/k8_yaml/productreview-service.yaml
 
 echo "Create UI deployment and service in k8 for version 1.0"
