@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: productreviewservice
+  namespace: shoppingportal
+spec:
+  type: NodePort
+  selector: 
+    name: productreview
+  ports:
+  - protocol: TCP
+    targetPort: 8082
+    port: 80
+    name: http
+

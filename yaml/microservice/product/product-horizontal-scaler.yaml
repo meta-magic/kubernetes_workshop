@@ -1,0 +1,13 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: product-hpa
+  namespace: shoppingportal
+spec:
+  scaleTargetRef:
+    apiVersion:  apps/v1beta2
+    kind: Deployment
+    name: productms-deploy
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 25
