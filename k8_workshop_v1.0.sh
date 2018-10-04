@@ -28,7 +28,7 @@ kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_worksh
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/productreview/productreview-service.yaml
 
 echo "Create UI deployment and service in k8 for version 1.0"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-deploymentv1.1.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-deploymentv1.0.yaml
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-service.yaml
 
 
