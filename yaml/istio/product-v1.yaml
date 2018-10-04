@@ -1,3 +1,14 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: productmssecret
+  namespace: shoppingportal
+type: Opaque
+data:
+  mysqlpassword: cm9vdA==
+  mysqluser: cm9vdA==
+  mysqlconnectionurl: amRiYzpteXNxbDovL215c3FsL3N5cwo=
+---
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
@@ -33,11 +44,7 @@ spec:
           - containerPort: 8082
           resources:
             requests:
-              memory: "256Mi"
               cpu: "200m"
-            limits:
-              memory: "512Mi"
-              cpu: "1000m"
           livenessProbe:
             httpGet:
               path: /productms/check/live
@@ -62,4 +69,19 @@ spec:
                 key: mysqlpassword
           - name: PRODUCTMS_VERSION
             value: Product MS Version 1.0
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: productservice
+  namespace: shoppingportal
+spec:
+  selector: 
+    name: productms
+  ports:
+  - protocol: TCP
+    targetPort: 8082
+    port: 80
+    name: http
 
+    

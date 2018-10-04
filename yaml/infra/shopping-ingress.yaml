@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: workshop-ingress
+  name: shoppingportal-ingress
   namespace: shoppingportal
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: \"false\"
