@@ -5,11 +5,16 @@
 # This script will create the database setup
 #
 
-echo "Create Shoppingportal namespace"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/infra/shoppiny-ns.yaml
+echo " MAKE SURE YOU HAVE EXECUTED BELOW YAML BEFORE..."
 
-echo "Creating ingress"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/infra/shopping-ingress.yaml
+#echo "install/kubernetes/helm/istio/templates/crds.yaml && install/kubernetes/istio-demo.yaml"
+
+# kubectl create -f /Users/ketangote/opt/istio-1.0.2/install/kubernetes/helm/istio/templates/crds.yaml
+# kubectl create -f /Users/ketangote/opt/istio-1.0.2/install/kubernetes/istio-demo.yaml 
+
+
+echo "Create Shoppingportal namespace"
+kubectl replace -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/shoppiny-ns.yaml
 
 echo "Creating MYSQL(secret, volumn, deployment and service) in k8"
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/mysqlfiles/mysql-secret.yaml
@@ -18,18 +23,15 @@ kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_worksh
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/mysqlfiles/mysql-dep.yaml
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/mysqlfiles/mysql-svc.yaml
 
-echo "Create Prodcut Microservice secret, deployment and service in k8"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/product/product-secret.yaml
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/product/product-deployment.yaml
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/product/product-service.yaml
 
 echo "Create Prodcut Review Microservice deployment and service in k8"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/productreview/productreview-deployment.yaml
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/microservice/productreview/productreview-service.yaml
+#kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/productreview-v1.yaml
+kubectl create -f /Users/ketangote/metamagic_workshop/kubernetes_workshop/yaml/istio/productreview-v1.yaml
+kubectl create -f /Users/ketangote/metamagic_workshop/kubernetes_workshop/yaml/istio/shoppoingportal-gw.yaml
 
-echo "Create UI deployment and service in k8 for version 1.0"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-deploymentv1.0.yaml
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-service.yaml
+#echo "Create UI deployment and service in k8 for version 1.0"
+#kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-deploymentv1.0.yaml
+#kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-service.yaml
 
 
 

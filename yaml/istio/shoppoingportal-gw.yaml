@@ -12,7 +12,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-     - bookinfo.com
+     - "*"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -21,10 +21,18 @@ metadata:
   namespace: shoppingportal  
 spec:
   hosts:
-   - bookinfo.com
+   - "*"
   gateways:
   - shoppingportal-gateway
   http:
+  - match:
+    - uri:
+        prefix: /ui
+    route:
+    - destination:
+        host: k8uiworkshopservice.shoppingportal.svc.cluster.local
+        port:
+          number: 8082
   - match:
     - uri:
         prefix: /productms
@@ -32,7 +40,7 @@ spec:
     - destination:
         host: productservice.shoppingportal.svc.cluster.local
         port:
-          number: 80
+          number: 8082
   - match:
     - uri:
         prefix: /productreviewms
@@ -40,4 +48,4 @@ spec:
     - destination:
         host: productreviewservice.shoppingportal.svc.cluster.local
         port:
-          number: 80
+          number: 8082
