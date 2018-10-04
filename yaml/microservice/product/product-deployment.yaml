@@ -56,3 +56,6 @@ spec:
               secretKeyRef: 
                 name: productmssecret
                 key: mysqlpassword
+          - name: PRODUCTMS_VERSION
+            value: Product MS Version 1.0
+
