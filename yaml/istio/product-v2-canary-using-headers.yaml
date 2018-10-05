@@ -34,7 +34,7 @@ spec:
         subset: v2 # match v2 only
         port:
           number: 80
-  - route: # default route for hello.example.com
+  - route: 
     - destination:
         host: productservice.shoppingportal.svc.cluster.local
         subset: v1 # match v1 only
