@@ -1,18 +1,7 @@
-apiVersion: v1
-kind: Secret
-metadata:
-  name: productmssecret
-  namespace: shoppingportal
-type: Opaque
-data:
-  mysqlpassword: cm9vdA==
-  mysqluser: cm9vdA==
-  mysqlconnectionurl: amRiYzpteXNxbDovL215c3FsL3N5cwo=
----
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: productms-deploy
+  name: productms-deploy-v2
   namespace: shoppingportal
 spec:
   replicas: 1
@@ -30,7 +19,7 @@ spec:
     metadata:
       labels:
         name: productms
-        version: v1
+        version: v2
         release: stable
         tier: fe
         zone: prod
@@ -68,21 +57,4 @@ spec:
                 name: productmssecret
                 key: mysqlpassword
           - name: PRODUCTMS_VERSION
-            value: Product MS Version 1.0
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: productservice
-  namespace: shoppingportal
-  labels:
-    name: productms
-    version: "1.0.0"
-spec:
-  selector: 
-    name: productms
-  ports:
-  - protocol: TCP
-    targetPort: 8082
-    port: 80
-    name: http
+            value: Product MS Version 2.0
