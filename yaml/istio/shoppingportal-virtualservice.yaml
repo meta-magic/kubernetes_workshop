@@ -59,4 +59,3 @@ spec:
         host: productreviewservice.shoppingportal.svc.cluster.local
         port:
           number: 80
-          
