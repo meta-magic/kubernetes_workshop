@@ -32,6 +32,6 @@ kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_worksh
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-service.yaml
 
 
+echo "Thankyou Metamagic"
 
-echo $PWD
 
