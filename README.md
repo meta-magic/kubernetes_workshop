@@ -13,3 +13,16 @@ Kubernetes progressively rolls out changes to your application or its configurat
 Jenkins helps to create continuous integration and Continuous Delivery pipelines. It allows to write pipeline as code and supports distributed build environments.
 
 Microservices Architecture adds complexity in terms of management, monitoring etc., which put the brakes on developers mindset when they want to switch over from Monolithic to Microservices based Architecture. Service Mesh helps over here along with Kubernetes with the Sidecar Pattern to streamline and simplify the communication, management, and monitoring of the Microservices.
+
+## Shopping Portal Architecture - Kubernetes without Istio
+
+
+## Shopping Portal Architecture - Kubernetes with Istio
+
+
+
+## Kubernetes
+
+<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/b059f935-241a-4cbe-908c-f30388821e39.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1300,cg:true">
+
+## Istio Components
