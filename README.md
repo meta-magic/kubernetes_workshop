@@ -23,6 +23,12 @@ Microservices Architecture adds complexity in terms of management, monitoring et
 
 ## Kubernetes
 
-<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/b059f935-241a-4cbe-908c-f30388821e39.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1300,cg:true">
+<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/b059f935-241a-4cbe-908c-f30388821e39.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1300,cg:true" alt="Kubernetes Architecture" />
 
 ## Istio Components
+
+<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/754c38e1-0aef-4d67-a0e5-767ab2491a87.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2272,h:1136,cg:true" alt="Istio Components" />
+
+## Linux Containers 
+
+<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/987cc423-d7c6-46a2-9d08-62c2caa906da.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2272,h:1136,cg:true" lt="Linux Containers" />
