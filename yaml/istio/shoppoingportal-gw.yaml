@@ -32,7 +32,7 @@ spec:
     - destination:
         host: k8uiworkshopservice.shoppingportal.svc.cluster.local
         port:
-          number: 8082
+          number: 80
   - match:
     - uri:
         prefix: /productms
@@ -40,7 +40,7 @@ spec:
     - destination:
         host: productservice.shoppingportal.svc.cluster.local
         port:
-          number: 8082
+          number: 80
   - match:
     - uri:
         prefix: /productreviewms
@@ -48,4 +48,4 @@ spec:
     - destination:
         host: productreviewservice.shoppingportal.svc.cluster.local
         port:
-          number: 8082
+          number: 80
