@@ -8,9 +8,6 @@
 echo "Create Shoppingportal namespace"
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/infra/shoppiny-ns.yaml
 
-echo "Creating ingress"
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/infra/shopping-ingress.yaml
-
 echo "Creating MYSQL(secret, volumn, deployment and service) in k8"
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/mysqlfiles/mysql-secret.yaml
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/mysqlfiles/mysql-pv.yaml
@@ -31,6 +28,8 @@ echo "Create UI deployment and service in k8 for version 1.0"
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-deploymentv1.0.yaml
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/ui/k8uiworkshop-service.yaml
 
+echo "Creating ingress"
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/infra/shopping-ingress.yaml
 
 echo "Thankyou Metamagic"
 
