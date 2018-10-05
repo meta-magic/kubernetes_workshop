@@ -5,8 +5,8 @@ metadata:
   namespace: shoppingportal
   annotations:
     kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80}]'
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/subnets: subnet-05ea8630b67fadc35,subnet-06a596c44ee69daa3,subnet-0f3b316de0087896c
 spec:
   rules:
