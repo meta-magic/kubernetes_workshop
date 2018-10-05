@@ -2,7 +2,7 @@
 
 ## Docker, Kubernetes & Istio Workshop
   
-Docker is a program that performs OS-level virtualization also known as containerization. On and Docker creates a simple tooling and a universal packaging approach that bundles up your application and its dependencies inside a container. Docker containers can be used in development, staging to the production environment.
+Docker is a program that performs OS-level virtualization also known as containerization. Docker creates a simple tooling and a universal packaging approach that bundles up your application and its dependencies inside a container. Docker containers can be used in development, staging to the production environment.
 
 Kubernetes is an open source Container Orchestration System for automatic deployment, scaling, and management of Containerized application. Kubernetes gives you the freedom to take advantage of on-premise, hybrid or public cloud infrastructure. Kubernetes helps you to scale both horizontally and vertically depends on the load.
 
@@ -16,18 +16,18 @@ Microservices Architecture adds complexity in terms of management, monitoring et
 
 ## Shopping Portal Architecture - Kubernetes without Istio
 
-To deploy Microservices example in kubernetes with ingress controller, simpliy run [sh](https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/k8_workshop_v1.0.sh). This script will create
+To deploy Microservices example in kubernetes with ingress controller, simpliy run [k8_workshop_v1.0.sh](https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/k8_workshop_v1.0.sh). This script will create
  - [Shoppingportal namespace](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/infra)
  - [Persistent mysql container](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/mysqlfiles)
  - [Deployment](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/microservice) (i.e product app, product review app) with various configuration
  - [Ingress](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/infra) controller which has routing rules
  
- You can deploy new version of app using [sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.0.sh). Also if you want to test canary deployment without Istio you can execute [sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_canary_with_v1.0.sh), this will show different version of UI in round robin fashion.
+ You can deploy new version of app using [k8_workshop_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.0.sh). Also if you want to test canary deployment without Istio you can execute [8_workshop_canary_with_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_canary_with_v1.0.sh), this will show different version of UI in round robin fashion.
 
 
 ## Shopping Portal Architecture - Kubernetes with Istio
 
-To deploy Microservices example in kubernetes with Istio, simpliy run [sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_istio_v1.0.sh). This script will create
+To deploy Microservices example in kubernetes with Istio, simpliy run [k8_workshop_istio_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_istio_v1.0.sh). This script will create
  - [Shoppingportal namespace](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shopping-ns.yaml)
  - [Persistent mysql container](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/mysqlfiles)
  - [Deployment](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/istio) (i.e product app, product review app) with various configuration
