@@ -1,13 +1,13 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: k8uiworkshop-deploy
+  name: k8uiworkshop-deploy-v1
   namespace: shoppingportal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: k8uiworkshop
+      name: k8uiworkshop-v1
       zone: prod
   minReadySeconds: 10
   strategy:
@@ -18,8 +18,8 @@ spec:
   template:
     metadata:
       labels:
-        name: k8uiworkshop
-        version: v2
+        name: k8uiworkshop-v1
+        version: v1
         release: stable
         tier: fe
         zone: prod
@@ -27,7 +27,21 @@ spec:
     spec:
       containers:
         - name: k8uiworkshop-ctr
-          image: metamagicglobal/k8uiworkshop:v1.2
+          image: metamagicglobal/k8uiworkshop:v1.0
           imagePullPolicy: Always
           ports:
           - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8uiworkshopservice-v1
+  namespace: shoppingportal
+spec:
+  selector: 
+    name: k8uiworkshop-v1
+  ports:
+  - protocol: TCP
+    targetPort: 80
+    port: 80
+    name: http

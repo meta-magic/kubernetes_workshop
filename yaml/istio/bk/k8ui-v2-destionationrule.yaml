@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: k8uiworkshop-v2-canary
+  namespace: shoppingportal    
+spec:
+  host: k8uiworkshopservice.shoppingportal.svc.cluster.local
+  subsets:
+  - name: v1
+    labels:
+      version: v1
+  - name: v2
+    labels:
+      version: v2

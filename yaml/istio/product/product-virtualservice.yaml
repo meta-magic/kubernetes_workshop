@@ -1,0 +1,27 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: shoppingportal-productservice-vs
+  namespace: shoppingportal   
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - shoppingportal-gateway
+  http:
+  - match:
+    - headers:
+        end-user:
+          exact: metamagic
+    route:
+    - destination:
+        host: productservice.shoppingportal.svc.cluster.local
+        subset: canary # match v2 only
+        port:
+          number: 80
+  - route: 
+    - destination:
+        host: productservice.shoppingportal.svc.cluster.local
+        subset: stable # match v1 only
+        port:
+          number: 80

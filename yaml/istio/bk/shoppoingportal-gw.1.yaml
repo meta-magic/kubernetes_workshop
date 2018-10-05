@@ -27,14 +27,6 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /ui
-    route:
-    - destination:
-        host: k8uiworkshopservice.shoppingportal.svc.cluster.local
-        port:
-          number: 80
-  - match:
-    - uri:
         prefix: /productms
     route:
     - destination:
