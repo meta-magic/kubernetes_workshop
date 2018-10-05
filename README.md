@@ -22,7 +22,7 @@ To deploy Microservices example in kubernetes with ingress controller, simpliy r
  - [Deployment](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/microservice) (i.e product app, product review app) with various configuration
  - [Ingress](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/infra) controller which has routing rules
  
- You can deploy new version of app using [k8_workshop_v1.1.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.1.sh). Also if you want to test canary deployment without Istio you can execute [8_workshop_canary_with_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_canary_with_v1.0.sh), this will show different version of UI in round robin fashion.
+ You can deploy new version of app using [k8_workshop_v1.1.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.1.sh). Also if you want to test canary deployment without Istio you can execute [k8_workshop_canary_with_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_canary_with_v1.0.sh), this will show different version of UI in round robin fashion.
 
 
 ## Shopping Portal Architecture - Kubernetes with Istio
