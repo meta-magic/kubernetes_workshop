@@ -10,4 +10,4 @@ spec:
     name: productms-deploy
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 25
+  targetCPUUtilizationPercentage: 10

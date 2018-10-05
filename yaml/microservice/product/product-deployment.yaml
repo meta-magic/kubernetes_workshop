@@ -33,11 +33,11 @@ spec:
           - containerPort: 8082
           resources:
             requests:
-              memory: "256Mi"
+              #memory: "256Mi"
               cpu: "200m"
-            limits:
-              memory: "512Mi"
-              cpu: "1000m"
+            #limits:
+              #memory: "512Mi"
+              #cpu: "1000m"
           livenessProbe:
             httpGet:
               path: /productms/check/live
