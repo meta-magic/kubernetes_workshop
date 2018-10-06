@@ -15,13 +15,13 @@ spec:
           exact: metamagic
     route:
     - destination:
-        host: productservice.shoppingportal.svc.cluster.local
+        host: productservice.shoppingportal-istio.svc.cluster.local
         subset: canary # match v2 only
         port:
           number: 80
   - route: 
     - destination:
-        host: productservice.shoppingportal.svc.cluster.local
+        host: productservice.shoppingportal-istio.svc.cluster.local
         subset: stable # match v1 only
         port:
           number: 80
