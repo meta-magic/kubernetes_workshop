@@ -16,28 +16,28 @@ Cloud platforms provide a wealth of benefits for the organizations that use them
 Apply CRDs:
 
 ```
-kubectl apply -f ~/istio-1.0.2/install/kubernetes/helm/istio/templates/crds.yaml
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/helm/istio/templates/crds.yaml
 ```
 Wait a few seconds.
 
 Option 1: with no mutual TLS authentication
 ```
-kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo.yaml
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo.yaml
 ```
 Option 2: or with mutual TLS authentication
 ```
-kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo-auth.yaml
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo-auth.yaml
 ```
 
 #### Installation Verification
 
 ```
-kubectl kubectl get pods -n istio-system
+$ kubectl get pods -n istio-system
 ```
 <img width="673" alt="screen shot 2018-10-06 at 9 42 24 am" src="https://user-images.githubusercontent.com/23295769/46567179-2af1fe80-c94c-11e8-8ea9-23e37c1f3f43.png">
 
 ```
-kubectl kubectl get svc -n istio-system
+$ kubectl get svc -n istio-system
 ```
 <img width="1556" alt="screen shot 2018-10-06 at 9 37 26 am" src="https://user-images.githubusercontent.com/23295769/46567159-88d21680-c94b-11e8-9b76-f8fc5b9955b5.png">
 
