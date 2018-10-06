@@ -12,7 +12,7 @@ echo "install/kubernetes/helm/istio/templates/crds.yaml && install/kubernetes/is
 
 
 echo "Create Shoppingportal namespace"
-kubectl replace -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/aws-istio/shopping-ns.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/aws-istio/shopping-ns.yaml
 
 echo "Creating MYSQL(secret, volumn, deployment and service) in k8"
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/aws-istio/mysqlfiles/mysql-secret.yaml
