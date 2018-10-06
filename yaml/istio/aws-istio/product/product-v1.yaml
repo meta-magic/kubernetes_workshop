@@ -63,7 +63,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: productmssecret
-  namespace: shoppingportal
+  namespace: shoppingportal-istio
 type: Opaque
 data:
   mysqlpassword: cm9vdA==
