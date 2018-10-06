@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: productreviewservice
+  namespace: shoppingportal-istio
+spec:
+  selector: 
+    name: productreviewms
+  ports:
+  - protocol: TCP
+    targetPort: 8082
+    port: 80
+    name: http

@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: product-destination-rules
+  namespace: shoppingportal-istio
+spec:
+  host: productservice.shoppingportal.svc.cluster.local
+  subsets:
+  - name: stable
+    labels:
+      version: v1
+  - name: canary
+    labels:
+      version: v2
