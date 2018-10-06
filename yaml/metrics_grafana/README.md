@@ -6,7 +6,7 @@ Enable metrics in minikube : minikube addon enable metrics-server
 - kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=10
 - kubectl get hpa or watch kubectl get hpa
 - kubectl run -i --tty load-generator --image=busybox /bin/sh
-  - while true; do wget -q -O- http://php-apache/; done
+- while true; do wget -q -O- http://php-apache/; done
 
 
 https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
