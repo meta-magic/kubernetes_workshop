@@ -61,7 +61,8 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
 
 ## Test
 
-#### UI
+#### UI A/B Testing - 2 different Versions app in Chrome and Firefox 
+
 - Open Chrome and enter url http://192.168.99.100:31380/ui/#/catlogue
 <img width="1095" alt="screen shot 2018-10-06 at 10 30 34 am" src="https://user-images.githubusercontent.com/23295769/46567608-3d236b00-c953-11e8-96ea-46987d0ba118.png">
 
