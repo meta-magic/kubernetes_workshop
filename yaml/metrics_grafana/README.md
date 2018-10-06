@@ -16,7 +16,7 @@ kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_worksh
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/metrics_grafana/productreview-service.yaml
 ````
 
-Open grafana and see various metrics for different pods accross different namesapce. This will give you statistic of memory,cpu, file system usage.
+[Open grafana](http://192.168.99.100:30002/?orgId=1) and see various metrics for different pods accross different namesapce. This will give you statistic of memory,cpu, file system usage.
 
 
 
