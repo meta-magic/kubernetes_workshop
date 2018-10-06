@@ -4,7 +4,7 @@ metadata:
   name: product-destination-rules
   namespace: shoppingportal-istio
 spec:
-  host: productservice.shoppingportal.svc.cluster.local
+  host: productservice.shoppingportal-istio.svc.cluster.local
   subsets:
   - name: stable
     labels:
