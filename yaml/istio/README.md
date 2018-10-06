@@ -46,6 +46,7 @@ kubectl kubectl get svc -n istio-system
 ##### Below application YAML is setup with option 1
 
 ## Shopping Portal Demo App - Kubernetes with Istio
+#### Setup
 To deploy Microservices example in kubernetes with Istio, simpliy run [k8_workshop_istio_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_istio_v1.0.sh). This script will create
  - [Shoppingportal namespace](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shopping-ns.yaml)
  - [Persistent mysql container](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/mysqlfiles)
@@ -53,6 +54,39 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
  - [Gateway](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-gw.yaml)
  - [Virtual Service](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-virtualservice.yaml)
 
+#### Verification of setup
+
+<img width="754" alt="screen shot 2018-10-06 at 10 08 30 am" src="https://user-images.githubusercontent.com/23295769/46567382-d6508280-c94f-11e8-907d-198322ea0982.png">
+
 
 ## Test
-Once you have executed 
+
+#### UI
+- Open Chrome and enter url http://192.168.99.100:31380/ui/#/catlogue
+<img width="1095" alt="screen shot 2018-10-06 at 10 30 34 am" src="https://user-images.githubusercontent.com/23295769/46567608-3d236b00-c953-11e8-96ea-46987d0ba118.png">
+
+- Open Firefox and enter url http://192.168.99.100:31380/ui/#/catlogue
+<img width="1252" alt="screen shot 2018-10-06 at 10 32 57 am" src="https://user-images.githubusercontent.com/23295769/46567615-53312b80-c953-11e8-8406-cc979215de5f.png">
+
+##### As we are having canary deploymentfor UI and based on USER agent we are redirecting traffic. You can see UI changes if it accessed from Chrome and Firefox. Please check YAML configuration of [New version](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/ui/ui-v2.yaml) and [Virtual Service](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-virtualservice.yaml)
+
+
+#### Product microservice
+
+```
+curl http://192.168.99.100:31380/productms/check/live
+curl http://192.168.99.100:31380/productms/product/catalogue
+curl http://192.168.99.100:31380/productms/product/catalogue --header "end-user:metamagic"
+```
+Product microservice also has canary deployment, based on header request is redirected. If header "end-user:metamagic" is present it is redirected to version 2 of product. 
+
+
+#### Product review microservice
+```
+curl http://192.168.99.100:31380/productreviewms/check/live
+curl http://productreviewservice:8082/productreviewms/productreview/1
+```
+
+
+
+
