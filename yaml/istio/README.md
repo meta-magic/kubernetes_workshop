@@ -10,6 +10,8 @@ Cloud platforms provide a wealth of benefits for the organizations that use them
 - echo 'export PATH="$PATH:/home/ubuntu/istio-1.0.2/bin"' >> ~/.profile
 - type "istioctl" to confirm path is setup properly
 
+##### If you are using minikube make sure you have enabled ingress, metric-server & heapster.
+
 ## Install
 Apply CRDs:
 
@@ -32,9 +34,16 @@ kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo-auth.yaml
 ```
 kubectl kubectl get pods -n istio-system
 ```
+<img width="673" alt="screen shot 2018-10-06 at 9 42 24 am" src="https://user-images.githubusercontent.com/23295769/46567179-2af1fe80-c94c-11e8-8ea9-23e37c1f3f43.png">
 
+```
+kubectl kubectl get svc -n istio-system
+```
+<img width="1556" alt="screen shot 2018-10-06 at 9 37 26 am" src="https://user-images.githubusercontent.com/23295769/46567159-88d21680-c94b-11e8-9b76-f8fc5b9955b5.png">
 
-#### Below application YAML is setup with option 1
+##### Only when you see all PODS are running, proceed further. Generally on local it is going to take time depending on network and hardward. 
+
+##### Below application YAML is setup with option 1
 
 ## Shopping Portal Demo App - Kubernetes with Istio
 To deploy Microservices example in kubernetes with Istio, simpliy run [k8_workshop_istio_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_istio_v1.0.sh). This script will create
