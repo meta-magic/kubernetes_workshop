@@ -18,6 +18,7 @@ kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_worksh
 
 [Open grafana](http://192.168.99.100:30002/?orgId=1) and see various metrics for different pods accross different namesapce. This will give you statistic of memory,cpu, file system usage.
 
+<img width="961" alt="screen shot 2018-10-06 at 11 34 54 am" src="https://user-images.githubusercontent.com/23295769/46568009-ea01e600-c95b-11e8-92d9-62aacfec6adc.png">
 
 
 
