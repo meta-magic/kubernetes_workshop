@@ -17,7 +17,7 @@ spec:
           regex: ".*Firefox.*"
     route:
     - destination:
-        host: k8uiworkshopservice.shoppingportal.svc.cluster.local
+        host: k8uiworkshopservice.shoppingportal-istio.svc.cluster.local
         subset: canary # match v2 only
         port:
           number: 80  
@@ -26,7 +26,7 @@ spec:
         prefix: /ui
     route:
     - destination:
-        host: k8uiworkshopservice.shoppingportal.svc.cluster.local
+        host: k8uiworkshopservice.shoppingportal-istio.svc.cluster.local
         subset: stable # match v2 only
         port:
           number: 80
@@ -38,7 +38,7 @@ spec:
           exact: metamagic
     route:
     - destination:
-        host: productservice.shoppingportal.svc.cluster.local
+        host: productservice.shoppingportal-istio.svc.cluster.local
         subset: canary # match v2 only
         port:
           number: 80  
@@ -47,7 +47,7 @@ spec:
         prefix: /productms
     route:
     - destination:
-        host: productservice.shoppingportal.svc.cluster.local
+        host: productservice.shoppingportal-istio.svc.cluster.local
         subset: stable # match v2 only
         port:
           number: 80
@@ -56,6 +56,6 @@ spec:
         prefix: /productreviewms
     route:
     - destination:
-        host: productreviewservice.shoppingportal.svc.cluster.local
+        host: productreviewservice.shoppingportal-istio.svc.cluster.local
         port:
           number: 80
