@@ -4,6 +4,7 @@ metadata:
   name: productreviewservice
   namespace: shoppingportal
 spec:
+  type: NodePort
   selector: 
     name: productreview
   ports:

@@ -38,6 +38,12 @@ spec:
             #limits:
               #memory: "512Mi"
               #cpu: "1000m"
+          livenessProbe:
+            httpGet:
+              path: /productms/check/live
+              port: 8082
+            initialDelaySeconds: 15
+            periodSeconds: 15          
           env:
           - name: PRODUCTMS_DB_CONNECTION_URL
             valueFrom:
