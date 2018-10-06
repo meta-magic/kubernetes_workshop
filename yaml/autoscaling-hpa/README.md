@@ -6,9 +6,9 @@ The Horizontal Pod Autoscaler automatically scales the number of pods in a repli
 
 Execute below YAML
 ````
-kubectl create -f /Users/ketangote/metamagic_workshop/kubernetes_workshop/yaml/autoscaling-hpa/productreview-deployment.yaml
-kubectl create -f /Users/ketangote/metamagic_workshop/kubernetes_workshop/yaml/autoscaling-hpa/productreview-service.yaml (Have set deployment with cpu and memory confugration)
-kubectl create -f /Users/ketangote/metamagic_workshop/kubernetes_workshop/yaml/autoscaling-hpa/product-horizontal-scaler.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/productreview-deployment.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/productreview-service.yaml (Have set deployment with cpu and memory confugration)
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/product-horizontal-scaler.yaml
 ````
 
 Generate request using below command
