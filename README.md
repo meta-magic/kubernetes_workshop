@@ -38,6 +38,14 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
  - [Gateway](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-gw.yaml)
  - [Virtual Service](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-virtualservice.yaml)
  
+## Shopping Portal Architecture - Kubernetes with Istio : A/B Testing using Canary Deployment
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-3.jpg" alt="Shopping Portal Architecture with Istio : A/B Testing" />
+
+## Shopping Portal Architecture - Kubernetes with Istio : Beta Testing using Canary Deployment
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-4.jpg" alt="Shopping Portal Architecture with Istio : Beta Testing" />
+
  #### More details on ISTIO deployment click [here](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/)
 
 ## Kubernetes
