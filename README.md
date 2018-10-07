@@ -16,6 +16,8 @@ Microservices Architecture adds complexity in terms of management, monitoring et
 
 ## Shopping Portal Architecture - Kubernetes without Istio
 
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-1.jpg" alt="Shopping Portal Architecture" />
+
 To deploy Microservices example in kubernetes with ingress controller, simpliy run [k8_workshop_v1.0.sh](https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/k8_workshop_v1.0.sh). This script will create
  - [Shoppingportal namespace](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/infra)
  - [Persistent mysql container](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/mysqlfiles)
@@ -26,6 +28,8 @@ To deploy Microservices example in kubernetes with ingress controller, simpliy r
 
 
 ## Shopping Portal Architecture - Kubernetes with Istio
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-2.jpg" alt="Shopping Portal Architecture with Istio" />
 
 To deploy Microservices example in kubernetes with Istio, simpliy run [k8_workshop_istio_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_istio_v1.0.sh). This script will create
  - [Shoppingportal namespace](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shopping-ns.yaml)
@@ -38,12 +42,12 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
 
 ## Kubernetes
 
-<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/b059f935-241a-4cbe-908c-f30388821e39.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:1300,cg:true" alt="Kubernetes Architecture" />
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Arch.jpg" alt="Kubernetes Architecture" />
 
 ## Istio Components
 
-<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/754c38e1-0aef-4d67-a0e5-767ab2491a87.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2272,h:1136,cg:true" alt="Istio Components" />
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Istio-Components.jpg" alt="Istio Components" />
 
 ## Linux Containers 
 
-<img src="https://img1.wsimg.com/isteam/ip/d5c5425e-ea61-41bb-a47e-8ce1293c41f9/987cc423-d7c6-46a2-9d08-62c2caa906da.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:2272,h:1136,cg:true" lt="Linux Containers" />
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Linux-Containers.jpg" lt="Linux Containers" />
