@@ -1,0 +1,111 @@
+server:
+  port: 7055
+  
+spring:
+  profiles: dev_env
+  application:
+    name: shoppingcartservice
+  zipkin:
+    baseUrl: localhost:9411 
+  sleuth:
+    enabled: true
+
+  kafka:
+    bootstrap-servers: localhost:9095
+    
+    
+  data:
+    mongodb:
+      database: ecommdb
+      port: 27017
+      host: localhost
+  
+token:
+  key: abcd0987654321qwertyuio
+  validity: 86400000   
+      
+eureka:
+  instance:
+    ip-address: false
+    lease-renewal-interval-in-seconds: 5
+    metadata-map: 
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7010/eureka/  
+      
+mongodb:
+  events:
+    collection:
+      name: events
+    snapshot:
+      collection:
+        name: snapshots
+                
+logging:
+  file: /tmp/mslogs/shoppingcartservice.log 
+  level:
+    com.metamagic.ms: DEBUG
+
+management:
+    endpoints:
+        web:
+         exposure:
+          include: info, health, metrics
+          
+---
+
+server:
+  port: 7056
+  
+spring:
+  profiles: qa_env
+  application:
+    name: shoppingcartservice
+  zipkin:
+    baseUrl: localhost:9411 
+  sleuth:
+    enabled: true
+
+  kafka:
+    bootstrap-servers: localhost:9095
+    
+    
+  data:
+    mongodb:
+      database: ecommdb
+      port: 27017
+      host: localhost
+  
+token:
+  key: abcd0987654321qwertyuio
+  validity: 86400000   
+      
+eureka:
+  instance:
+    ip-address: false
+    lease-renewal-interval-in-seconds: 5
+    metadata-map: 
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7011/eureka/  
+      
+mongodb:
+  events:
+    collection:
+      name: events
+    snapshot:
+      collection:
+        name: snapshots
+                
+logging:
+  file: /tmp/mslogs/shoppingcartservice.log 
+  level:
+    com.metamagic.ms: DEBUG
+
+management:
+    endpoints:
+        web:
+         exposure:
+          include: info, health, metrics          
