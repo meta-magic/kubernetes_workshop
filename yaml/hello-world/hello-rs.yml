@@ -1,0 +1,25 @@
+apiVersion: apps/v1beta2
+kind: ReplicaSet
+metadata:
+  name: hello-rs
+  namespace: helloworld
+  labels:
+    app: hello
+    zone: prod
+    vesrion: v1
+spec:
+  replicas: 2
+  selector:
+     matchLabels:
+       app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+       containers:
+         - name: hello-cntr
+           image: metamagicglobal/hello:v1.0
+           imagePullPolicy: IfNotPresent
+           ports:
+            - containerPort: 80

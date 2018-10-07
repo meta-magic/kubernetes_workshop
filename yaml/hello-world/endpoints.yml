@@ -1,0 +1,10 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: mysql-without-container
+  namespace: helloworld
+subsets:
+  - addresses:
+      - ip: 1.2.3.4
+    ports:
+      - port: 3306
