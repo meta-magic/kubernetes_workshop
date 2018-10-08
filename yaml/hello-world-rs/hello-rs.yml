@@ -2,7 +2,6 @@ apiVersion: apps/v1beta2
 kind: ReplicaSet
 metadata:
   name: hello-rs
-  namespace: helloworld
   labels:
     app: hello
     zone: prod
