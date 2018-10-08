@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: mysql-without-container
-  namespace: Helloworld
+  namespace: helloworld
 spec:
   ports:
   - protocol: TCP
