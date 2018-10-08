@@ -1,6 +1,7 @@
 ## YAMLS
 
  - [Hello World](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/hello-world)
+ - [Services](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/services)
  - [Namespace](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/namespace)
  - [Replication](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/replication)
  - [Job](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/jobs)
