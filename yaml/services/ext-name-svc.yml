@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: externalName-service
-  namespace: Helloworld
+  namespace: helloworld
 spec:
   type: ExternalName
   externalName: my.database.desire3d.com
