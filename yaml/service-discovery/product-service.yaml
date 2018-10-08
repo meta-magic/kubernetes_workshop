@@ -6,6 +6,7 @@ metadata:
 spec:
   selector: 
     name: productms
+  type: NodePort  
   ports:
   - protocol: TCP
     targetPort: 8082
