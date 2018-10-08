@@ -1,0 +1,32 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: hello-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      desire3d.io/name: hello
+      desire3d.io/zone: prod
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        desire3d.io/name: hello
+        desire3d.io/version: "1.0.0"
+        desire3d.io/release: stable
+        desire3d.io/tier: fe
+        desire3d.io/zone: prod
+        desire3d.io/managed-by: m2
+    spec:
+      containers:
+        - name: hello-ctr-1
+          image: metamagicglobal/hello:v1.0
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80

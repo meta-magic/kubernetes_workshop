@@ -7,7 +7,7 @@ metadata:
     zone: prod
     vesrion: v1
 spec:
-  replicas: 2
+  replicas: 3
   selector:
      matchLabels:
        app: hello
