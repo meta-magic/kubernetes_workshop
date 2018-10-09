@@ -1,0 +1,146 @@
+08-Oct-2018 14:33:33.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.12
+08-Oct-2018 14:33:33.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 4 2018 22:13:41 UTC
+08-Oct-2018 14:33:33.084 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.12.0
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:33:33.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/conf/logging.properties
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:33:33.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/temp
+08-Oct-2018 14:33:33.087 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/arafkarsh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Oct-2018 14:33:33.267 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:33:33.292 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:33:33.298 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:33:33.299 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:33:33.299 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 635 ms
+08-Oct-2018 14:33:33.324 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Oct-2018 14:33:33.324 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.12
+08-Oct-2018 14:33:33.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs]
+08-Oct-2018 14:33:33.615 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs] has finished in [284] ms
+08-Oct-2018 14:33:33.616 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager]
+08-Oct-2018 14:33:33.640 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager] has finished in [23] ms
+08-Oct-2018 14:33:33.640 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples]
+08-Oct-2018 14:33:33.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples] has finished in [215] ms
+08-Oct-2018 14:33:33.855 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT]
+08-Oct-2018 14:33:33.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT] has finished in [13] ms
+08-Oct-2018 14:33:33.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager]
+08-Oct-2018 14:33:33.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager] has finished in [16] ms
+08-Oct-2018 14:33:33.887 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:33:33.893 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:33:33.895 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 595 ms
+08-Oct-2018 14:33:41.969 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Oct-2018 14:33:41.970 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:33:42.029 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:33:42.083 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Oct-2018 14:33:42.111 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:33:42.115 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:33:42.116 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:33:42.116 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:35:24.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.12
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 4 2018 22:13:41 UTC
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.12.0
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Oct-2018 14:35:24.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre
+08-Oct-2018 14:35:24.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+08-Oct-2018 14:35:24.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Oct-2018 14:35:24.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:35:24.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:35:24.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/conf/logging.properties
+08-Oct-2018 14:35:24.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/temp
+08-Oct-2018 14:35:24.943 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/arafkarsh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Oct-2018 14:35:25.056 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:35:25.075 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:35:25.081 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:35:25.082 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:35:25.082 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 471 ms
+08-Oct-2018 14:35:25.105 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Oct-2018 14:35:25.106 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.12
+08-Oct-2018 14:35:25.112 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs]
+08-Oct-2018 14:35:25.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs] has finished in [251] ms
+08-Oct-2018 14:35:25.364 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager]
+08-Oct-2018 14:35:25.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager] has finished in [28] ms
+08-Oct-2018 14:35:25.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples]
+08-Oct-2018 14:35:25.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples] has finished in [248] ms
+08-Oct-2018 14:35:25.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT]
+08-Oct-2018 14:35:25.654 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT] has finished in [13] ms
+08-Oct-2018 14:35:25.655 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager]
+08-Oct-2018 14:35:25.668 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager] has finished in [14] ms
+08-Oct-2018 14:35:25.670 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:35:25.676 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:35:25.678 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 595 ms
+08-Oct-2018 14:35:47.400 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Oct-2018 14:35:47.400 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:35:47.457 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:35:47.512 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Oct-2018 14:35:47.533 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:35:47.536 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:35:47.538 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:35:47.538 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:37:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.12
+08-Oct-2018 14:37:38.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 4 2018 22:13:41 UTC
+08-Oct-2018 14:37:38.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.12.0
+08-Oct-2018 14:37:38.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.14
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:37:38.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:37:38.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/conf/logging.properties
+08-Oct-2018 14:37:38.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Oct-2018 14:37:38.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/arafkarsh/k8s/images/podshelltomcat/tc9
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/arafkarsh/k8s/images/podshelltomcat/tc9/temp
+08-Oct-2018 14:37:38.149 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/arafkarsh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+08-Oct-2018 14:37:38.259 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:37:38.279 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:37:38.285 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:37:38.285 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Oct-2018 14:37:38.286 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 472 ms
+08-Oct-2018 14:37:38.308 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Oct-2018 14:37:38.308 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.12
+08-Oct-2018 14:37:38.316 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs]
+08-Oct-2018 14:37:38.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/docs] has finished in [260] ms
+08-Oct-2018 14:37:38.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager]
+08-Oct-2018 14:37:38.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/manager] has finished in [29] ms
+08-Oct-2018 14:37:38.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples]
+08-Oct-2018 14:37:38.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/examples] has finished in [226] ms
+08-Oct-2018 14:37:38.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT]
+08-Oct-2018 14:37:38.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/ROOT] has finished in [13] ms
+08-Oct-2018 14:37:38.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager]
+08-Oct-2018 14:37:38.863 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/arafkarsh/k8s/images/podshelltomcat/tc9/webapps/host-manager] has finished in [17] ms
+08-Oct-2018 14:37:38.866 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:37:38.873 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:37:38.874 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 588 ms
+08-Oct-2018 14:37:41.946 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:37:42.004 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:37:42.059 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Oct-2018 14:37:42.076 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:37:42.080 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+08-Oct-2018 14:37:42.081 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Oct-2018 14:37:42.081 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
