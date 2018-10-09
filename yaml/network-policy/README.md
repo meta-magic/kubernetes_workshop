@@ -10,7 +10,7 @@ block-np.yml:
       kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/network-policy/pod-np.yml
      
      2) Create the Service.
-     kubectl expose --namespace=policy-demo deployment nginx --port=80
+     kubectl expose --namespace=policy-demo pod nginx --port=80
 
      3)Ensure the pod service is accessible.
       kubectl run --namespace=policy-demo access --rm -ti --image busybox /bin/sh --------------> create another and login into pod to ns
