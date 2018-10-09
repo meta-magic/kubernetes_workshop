@@ -2,6 +2,7 @@ apiVersion: apps/v1beta2
 kind: ReplicaSet
 metadata:
   name: hello-rs
+  namespace: helloworld
   labels:
     app: hello
     zone: prod
@@ -17,7 +18,7 @@ spec:
         app: hello
     spec:
        containers:
-         - name: hello-cntr
+         - name: hello-cntr-rs
            image: metamagicglobal/hello:v1.0
            imagePullPolicy: IfNotPresent
            ports:
