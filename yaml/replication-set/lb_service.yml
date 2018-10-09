@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-lb-svc
+  namespace: helloworld
   labels:
     app: hello-lb-svc
 spec:
