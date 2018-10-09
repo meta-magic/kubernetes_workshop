@@ -2,6 +2,7 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: hello-deploy
+  namespace: helloworld
 spec:
   replicas: 3
   selector:
