@@ -9,3 +9,6 @@ kubectl get nodes --show-labels       ------------------------------> node now h
 Step two:Add a nodeSelector field to your pod configuration
 command: kubectl create -f pod-nginx-node.yml
 
+ADVANCE:
+pod-affinity --->https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+node-affinity---->https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
