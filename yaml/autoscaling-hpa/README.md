@@ -2,6 +2,8 @@
 
 The Horizontal Pod Autoscaler automatically scales the number of pods in a replication controller, deployment or replica set based on observed CPU utilization
 
+Note: Make sure you have shoppingportal namespace
+
 #### Enable metric service before proceeding further, more detail can be found [metric-server](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/metrics_grafana)
 
 Execute below YAML
