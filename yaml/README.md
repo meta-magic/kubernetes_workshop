@@ -1,18 +1,30 @@
-## YAMLS
+Getting Started with Hello World
 
- - [Hello World](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/hello-world)
- - [Services](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/services)
- - [Namespace](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/namespace)
- - [Replication](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/replication)
- - [Job](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/jobs)
- - [Cron](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/jobs)
- - [Network Policy](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/network-policy)
- - [Mysql](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/mysqlfiles)
- - [Secrets](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/secrets)
- - [Liveness](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/liveness)
- - [Autoscaling](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/autoscaling-hpa)
- - [Metrics-Garfana](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/metrics_grafana)
- - [Inter Microservice Service Communication](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/service-discovery)
- - [Ingress](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.0.sh)
- - [Canary](https://github.com/meta-magic/kubernetes_workshop/edit/master/k8_workshop_canary_with_v1.0.sh) 
- - [Istio](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/istio)
+1. Hello World - Simple Pod and Accessing the Pod Directly
+2. Hello World with ReplicaSet (3 Replicas)
+3. Hello world with Deployment / Service
+4. Hello World Access from Outside (Service / Ingress)
+5. Hello World Version Rollouts and Undo
+6. Hello World with Namespace
+
+Advanced Session
+
+1. Secrets
+2. MySQL
+3. Liveness
+4. AutoScaling
+5. Network Policy
+6. Inter Microservice Communication
+
+Other Features
+
+1. Jobs
+2. Cron
+3. Metrics and Grafana
+
+Mesh
+1. Istio Gateway / Virtual Service / Destination Rule
+2. A/B Testing  using Canary
+3. Beta Testing  using Canary
+4. Fault Injection
+5. Circuit Breaker
