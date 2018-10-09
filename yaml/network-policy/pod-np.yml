@@ -1,5 +1,5 @@
 apiVersion: apps/v1beta2
-kind: Depolyment
+kind: Deployment
 metadata:
   name: nginx
   namespace: policy-demo
