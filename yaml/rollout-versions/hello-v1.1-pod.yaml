@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         desire3d.io/name: hello
-        desire3d.io/version: "1.0.0"
+        desire3d.io/version: "1.0.2"
         desire3d.io/release: stable
         desire3d.io/tier: fe
         desire3d.io/zone: prod
