@@ -5,7 +5,7 @@ metadata:
   namespace: helloworld
 spec:
   rules:
- - http:
+  - http:
       paths:
       - path: /
         backend:
