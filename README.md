@@ -1,5 +1,7 @@
 # Kubernetes Workshop
 
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Workshop-Team.jpg" alt="Araf Karsh Hamid, Deepali Arvind, Ketan Gote" />
+
 ## Docker, Kubernetes & Istio Workshop
   
 Docker is a program that performs OS-level virtualization also known as containerization. Docker creates a simple tooling and a universal packaging approach that bundles up your application and its dependencies inside a container. Docker containers can be used in development, staging to the production environment.
@@ -13,6 +15,8 @@ Kubernetes progressively rolls out changes to your application or its configurat
 Jenkins helps to create continuous integration and Continuous Delivery pipelines. It allows to write pipeline as code and supports distributed build environments.
 
 Microservices Architecture adds complexity in terms of management, monitoring etc., which put the brakes on developers mindset when they want to switch over from Monolithic to Microservices based Architecture. Service Mesh helps over here along with Kubernetes with the Sidecar Pattern to streamline and simplify the communication, management, and monitoring of the Microservices.
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day-Schedule.jpg" alt="2 Day Kubernetes Workshop Schedule" />
 
 ## Shopping Portal Architecture - Kubernetes without Istio
 
