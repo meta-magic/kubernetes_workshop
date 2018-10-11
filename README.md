@@ -59,3 +59,11 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
 ## Linux Containers 
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Linux-Containers.jpg" lt="Linux Containers" />
+
+## License
+
+Copyright © [MetaMagic Global Inc](http://www.metamagicglobal.com/), 2017-18. [Amexio Angular EXtensions](http://www.amexio.tech). All rights reserved.
+
+Licensed under the [Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html)  License.
+
+**Enjoy!**
