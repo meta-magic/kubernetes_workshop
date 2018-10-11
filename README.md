@@ -68,6 +68,6 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
 
 Copyright © [MetaMagic Global Inc](http://www.metamagicglobal.com/), 2017-18. [MetaArivu Academia](http://www.metaarivu.com). All rights reserved.
 
-Licensed under the [Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html) License. Docs By [3.0](https://creativecommons.org/licenses/by/3.0/)
+Licensed under the [Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html) License. Docs License By [CC 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 **Enjoy!**
