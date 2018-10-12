@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-    name: shoppingportal-istio
-    labels:
-       name: shoppingportal-istio
-       istio-injection: enabled
