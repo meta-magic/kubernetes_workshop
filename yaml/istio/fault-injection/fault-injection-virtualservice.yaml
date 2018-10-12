@@ -17,4 +17,7 @@ spec:
         host: productreviewservice.shoppingportal.svc.cluster.local
         port:
           number: 80
-    timeout: 1s # timeout the service call if it is more then 1 sec, curl http://192.168.99.100:31380/productreviewms/productreview/timeout/1 - This endpoint has sleep of 5 sec
+    fault: #This will put delay of 2 sec for every request to productreview service
+        delay:
+          percent: 100
+          fixedDelay: 2s 
