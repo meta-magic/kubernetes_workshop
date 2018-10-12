@@ -21,3 +21,10 @@ spec:
         delay:
           percent: 100
           fixedDelay: 2s 
+    # Below Fault example, puts delay of 2 second and abort 10 percentage of request with 400 request
+    # fault: 
+        # delay:
+          # fixedDelay: 2s 
+          # abort:
+              # percent: 10
+              # httpStatus: 400
