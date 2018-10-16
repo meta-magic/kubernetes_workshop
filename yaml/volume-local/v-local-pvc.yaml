@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: omega-pvc-local
+  namespace: omega-local
+spec:
+  storageClassName: omega-sc-local
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi

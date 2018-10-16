@@ -1,0 +1,44 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: omega-local-deploy
+  namespace: omega-local
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      desire3d.io/name: omega-pod
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        desire3d.io/name: omega-pod
+        desire3d.io/version: "1.0.0"
+        desire3d.io/release: stable
+        desire3d.io/tier: fe
+        desire3d.io/zone: prod
+        desire3d.io/managed-by: m2
+    spec:
+      volumes:
+        - name: omega-volume-local
+          persistentVolumeClaim:
+           # Local Storage Claim
+           claimName: omega-pvc-local
+      containers:
+        - name: omega-ctr
+          image: metamagic/oshell
+          env:
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+          volumeMounts:
+          # Mount omega-volume-local from 
+          # persistentVolumeClaim
+            - mountPath: "/home/data"
+              name: omega-volume-local
