@@ -6,7 +6,7 @@ metadata:
 spec:
   storageClassName: omega-sc-aws-slow
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: 2Gi
