@@ -4,7 +4,7 @@ metadata:
   name: omega-aws-deploy
   namespace: omega-aws
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       desire3d.io/name: omega-pod-aws
@@ -39,7 +39,7 @@ spec:
                   fieldPath: status.podIP
           resources:
              limits:
-               cpu: 1000mi      
+               cpu: "1000m"
           volumeMounts:
           # Mount omega-fs from persistentVolumeClaim
             - mountPath: "/home/data"
