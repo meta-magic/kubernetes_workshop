@@ -1,0 +1,43 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: omega-efs-deploy
+  namespace: omega-efs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      desire3d.io/name: omega-pod-aws
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        desire3d.io/name: omega-pod-aws
+        desire3d.io/version: "1.0.0"
+        desire3d.io/release: stable
+        desire3d.io/tier: be
+        desire3d.io/zone: prod
+        desire3d.io/managed-by: m2
+    spec:
+      volumes:
+        - name: efs
+          persistentVolumeClaim:
+           # Local Storage Claim
+           claimName: efs
+      containers:
+        - name: omega-ctr
+          image: metamagic/oshell
+          env:
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+          volumeMounts:
+          # Mount omega-fs from persistentVolumeClaim
+            - mountPath: "/home/data"
+              name: efs
