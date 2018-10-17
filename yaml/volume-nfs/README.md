@@ -13,6 +13,13 @@ Kubernetes supports EBS Persistent Volumes by default. It also supports EFS Pers
 
 - In the deployment section change the `server:` to the DNS endpoint of the EFS you created.
 
-- `kubectl apply -f manifest.yaml` 
+kubectl apply -f v-efs-provisioner-manifest.yml 
 
 2) create the namespace 
+kubectl create -f efs-ns.yml
+3) create the pvc 
+kubectl create -f v-efs-pvc.yml
+4) create the volume
+kubectl create -f v-efs-volume.yml
+5)create the deployment
+kubectl create -f v-aws-dep-efs.yml
