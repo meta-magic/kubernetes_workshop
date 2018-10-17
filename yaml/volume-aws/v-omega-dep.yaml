@@ -1,13 +1,13 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: omega-deploy
+  name: omega-aws-deploy
   namespace: omega-aws
 spec:
   replicas: 3
   selector:
     matchLabels:
-      desire3d.io/name: omega-pod
+      desire3d.io/name: omega-pod-aws
   minReadySeconds: 10
   strategy:
     type: RollingUpdate
@@ -17,10 +17,10 @@ spec:
   template:
     metadata:
       labels:
-        desire3d.io/name: omega-pod
+        desire3d.io/name: omega-pod-aws
         desire3d.io/version: "1.0.0"
         desire3d.io/release: stable
-        desire3d.io/tier: fe
+        desire3d.io/tier: be
         desire3d.io/zone: prod
         desire3d.io/managed-by: m2
     spec:
