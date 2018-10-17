@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: omega-pvc-aws-dynamic
+  namespace: omega
+spec:
+  storageClassName: omega-sc-aws-slow
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 4Gi
