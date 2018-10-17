@@ -16,11 +16,11 @@ kubectl get pods -n istio-system
 
 
 ## Envoy and OpenTracing
-OpenTracing is vendor neutral and therefore we also have to supply a tracer implementation. In pur microservice example "Product and Product review" we are using JAEGER tracing.
+OpenTracing is vendor neutral and therefore we also have to supply a tracer implementation. In our microservice example "Product and Product review" we are using JAEGER tracing.
 Envoy uses [B3 propagation](https://istio.io/docs/tasks/telemetry/distributed-tracing/#understanding-what-happened) which is not enabled in Jaeger by default and has to be registered explicitly. 
 Check [Product MS code](https://raw.githubusercontent.com/meta-magic/product_ms/master/src/main/java/com/metamagic/productms/ProductMsApplication.java) which explains how to enable.
 
-## Enable Jaeger console 
+## Jaeger console 
 Note: Here we are doing port forwarding to 16686
 ````
 kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=jaeger -o jsonpath='{.items[0].metadata.name}') 16686:16686 
