@@ -28,7 +28,7 @@ spec:
         - name: omega-volume-aws
           persistentVolumeClaim:
            # Local Storage Claim
-           claimName: omega-pvc-aws-dynamic
+           claimName: omega-pvc-aws
       containers:
         - name: omega-ctr
           image: metamagic/oshell
