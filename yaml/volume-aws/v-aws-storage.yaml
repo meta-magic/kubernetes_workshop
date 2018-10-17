@@ -5,5 +5,5 @@ metadata:
 provisioner: kubernetes.io/aws-ebs
 parameters:
   type: io1
-  zone: us-east-1d
+  zone: us-east-1b
   iopsPerGB: "10"
