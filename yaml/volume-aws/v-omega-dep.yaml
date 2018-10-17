@@ -4,7 +4,7 @@ metadata:
   name: omega-aws-deploy
   namespace: omega-aws
 spec:
-  replicas: 5
+  replicas: 15
   selector:
     matchLabels:
       desire3d.io/name: omega-pod-aws
