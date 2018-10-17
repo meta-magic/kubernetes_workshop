@@ -27,6 +27,7 @@ kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=ja
 ````
 
 ### Once your all Microservice Application is running, execute below curl
+Note: Here we are assuming you have deployed Application in Istio, following [this](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/istio)
 ```
 curl http://192.168.99.100:31380/productms/product/catalogue
 curl http://192.168.99.100:31380/productms/product/catalogue/1
