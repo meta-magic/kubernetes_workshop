@@ -9,10 +9,10 @@ spec:
   rules:
   - http:
       paths:
-#      - path: /ui
-#        backend:
-#          serviceName: k8uiworkshopservice
- #         servicePort: 80
+      - path: /ui
+        backend:
+          serviceName: k8uiworkshopservice
+          servicePort: 80
       - path: /productms
         backend:
           serviceName: productservice
