@@ -4,6 +4,7 @@ metadata:
   name: k8uiworkshopservice
   namespace: shoppingportal
 spec:
+  type: NodePort
   selector: 
     name: k8uiworkshop
   ports:
