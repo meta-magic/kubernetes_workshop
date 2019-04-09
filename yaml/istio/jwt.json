@@ -1,12 +1,10 @@
 {
   "keys": [
     {
-  "kty": "RSA",
-  "e": "AQAB",
-  "use": "enc",
-  "kid": "metamagic0987654321",
-  "alg": "RS256",
-  "n": "gnRtI2v2qbP2VVdSMBBjW3fooKbdeys65hb1DC0QXMGq1yeYr9UxTIqPXTPMSm00dgsLp0Fe6IazJiPpRLwSrWqGJ62o8f_a6yPuPmOrZTs8QroNTfsLaNrTC31D4qk9JlqbpID4T8HF1hFYQbnqCCadA5AyntEQcvKV-TM6fB_N--UMxUilyAWplmj8zIcoL_6uNYQuqXmvy1KeB_uIkhIJsU0nuWF3y2QAyqTG8jqyNClankTXacqaTmRqWlEKdhGcjGafsCGvFqXyPkxHBwHk8yFLQZC8GMxa3YIfDpbwnS_GnlvXb8R8ztQoUECGg15LAmUW0kyblY3m2x3BQw"
-}
+      "kty": "RSA",
+      "e": "AQAB",
+      "kid": "metamagic0987654321",
+      "n": "gnRtI2v2qbP2VVdSMBBjW3fooKbdeys65hb1DC0QXMGq1yeYr9UxTIqPXTPMSm00dgsLp0Fe6IazJiPpRLwSrWqGJ62o8f_a6yPuPmOrZTs8QroNTfsLaNrTC31D4qk9JlqbpID4T8HF1hFYQbnqCCadA5AyntEQcvKV-TM6fB_N--UMxUilyAWplmj8zIcoL_6uNYQuqXmvy1KeB_uIkhIJsU0nuWF3y2QAyqTG8jqyNClankTXacqaTmRqWlEKdhGcjGafsCGvFqXyPkxHBwHk8yFLQZC8GMxa3YIfDpbwnS_GnlvXb8R8ztQoUECGg15LAmUW0kyblY3m2x3BQw"
+    }
   ]
 }
