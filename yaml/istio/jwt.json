@@ -3,7 +3,6 @@
     {
       "e": "AQAB",
       "kty": "RSA",
-      "kid": "metamagicnew0987654321",
       "alg": "RS256",
       "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7f4zA4wYwZhC7DVh1z84V1t3L7LPnby2ifuOpKm8/IceiVmoy0F1KatHTUZSywF+3SFSevSTXqK1sZeTFq/Gyvzvvs7+sszS2XLBK2J4BWrnh8H+Q/s+rvdNSb5kd4AP6OwlU8luVerv84mpsoUDYJbOtW33hRI4LXMvAaMPfEnpv3Co7VTdgESAF4Oe/0TUgcK+WsZsqQSFR0WxWeRnBK6yzsv2P+6NKCOTgxyWwD5nhjM85x28JmjQn9tECAYMxSKwgGzm5XyEIl3pkB2rHrL4uHWkn+XkIfhPS12dQUX5dQSWwHajt2Yiqfc6T5cUbgO2lScSVOPCIqOATrJUJwIDAQAB"
     }
