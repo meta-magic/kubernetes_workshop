@@ -4,7 +4,7 @@ metadata:
    name: py
    spec:
    template:
-      metadata
+      metadata:
       name: py 
       spec:
          containers:
