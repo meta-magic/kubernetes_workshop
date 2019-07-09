@@ -8,7 +8,7 @@ metadata:
       name: py 
       spec:
          containers:
-            - name: py 
+          - name: py 
             image: python
             command: ["python", "SUCCESS"]
             restartPocliy: Never 
