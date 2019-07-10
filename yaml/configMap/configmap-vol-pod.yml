@@ -5,11 +5,10 @@ metadata:
 spec:
   containers:
     - name: configmap-container
-      image: busybox
-      command: [ "/bin/sh", "-c", "ls /etc/config/" ]
+      image: metamagic/podshelltomcat:9
       volumeMounts:
       - name: config-volume
-        mountPath: /etc/config
+        mountPath: /home/podadmin
   volumes:
     - name: config-volume
       configMap:
