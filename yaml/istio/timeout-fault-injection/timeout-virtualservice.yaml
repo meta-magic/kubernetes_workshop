@@ -11,7 +11,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /productreviewms/*
+        prefix: /productreviewms
     route:
     - destination:
         host: productreviewservice.shoppingportal.svc.cluster.local
