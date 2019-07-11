@@ -32,31 +32,30 @@ kubectl get pods --namespace kube-system
 ............................................................................................................................
 
 # helm commands:
- helm completion:  Generate autocompletions script for the specified shell (bash or zsh)
-  helm create   :   create a new chart with the given name
-  helm delete    :  given a release name, delete the release from Kubernetes
- helm dependency : manage a chart's dependencies
-  helm fetch    :   download a chart from a repository and (optionally) unpack it in local directory
-  helm get  :       download a named release
- helm help       : Help about any command
-  helm history  :   fetch release history
- helm home   :     displays the location of HELM_HOME
-  helm init   :     initialize Helm on both client and server
-  helm inspect   :  inspect a chart
-  helm install :    install a chart archive
- helm lint :       examines a chart for possible issues
-  helm list     :   list releases
- helm package  :   package a chart directory into a chart archive
-helm  plugin      :add, list, or remove Helm plugins
-  helm repo :       add, list, remove, update, and index chart repositories
-helm  reset   :    uninstalls Tiller from a cluster
-  helm rollback :   roll back a release to a previous revision
-  helm search  :  search for a keyword in charts
- helm serve   :    start a local http web server
- helm status  :    displays the status of the named release
-  helm template   : locally render templates
-helm  test    :    test a release
- helm upgrade   :  upgrade a release
- helm verify   :   verify that a chart at the given path has been signed and is valid
-helm  version   :  print the client/server version information
-
+    1. helm completion:  Generate autocompletions script for the specified shell (bash or zsh)
+    2.   helm create   :   create a new chart with the given name
+    3.   helm delete    :  given a release name, delete the release from Kubernetes
+    4.  helm dependency : manage a chart's dependencies
+    5.   helm fetch    :   download a chart from a repository and (optionally) unpack it in local directory
+    6.   helm get  :       download a named release
+    7.  helm help       : Help about any command
+    8.   helm history  :   fetch release history
+    9.  helm home   :     displays the location of HELM_HOME
+    10.   helm init   :     initialize Helm on both client and server
+    11.   helm inspect   :  inspect a chart
+    12.   helm install :    install a chart archive
+    13.  helm lint :       examines a chart for possible issues
+    14.   helm list     :   list releases
+    15.  helm package  :   package a chart directory into a chart archive
+    16. helm  plugin      :add, list, or remove Helm plugins
+    17.   helm repo :       add, list, remove, update, and index chart repositories
+    18. helm  reset   :    uninstalls Tiller from a cluster
+    19.   helm rollback :   roll back a release to a previous revision
+    20.   helm search  :  search for a keyword in charts
+    21.  helm serve   :    start a local http web server
+    22.  helm status  :    displays the status of the named release
+    23.   helm template   : locally render templates
+    24. helm  test    :    test a release
+    25.  helm upgrade   :  upgrade a release
+    26.  helm verify   :   verify that a chart at the given path has been signed and is valid
+    27. helm  version   :  print the client/server version information
