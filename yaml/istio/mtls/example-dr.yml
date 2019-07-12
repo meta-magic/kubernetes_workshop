@@ -1,0 +1,10 @@
+apiVersion: "networking.istio.io/v1alpha3"
+kind: "DestinationRule"
+metadata:
+  name: "namespace-wide"
+  namespace: "shoppingportal"
+spec:
+  host: "*.helloworld.svc.cluster.local"
+  trafficPolicy:
+    tls:
+      mode: DISABLE
