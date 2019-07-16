@@ -3,7 +3,7 @@ Before you start, run the following command to install python dependences.
 ```
 pip install jwcrypto
 ```
-Regenerate private key and JWKS (for developer use only.)
+Regenerate private key and JWKS (for demo use only.)
  1. Regenerate private key using openssl
  
            openssl genrsa -out key.pem 2048
