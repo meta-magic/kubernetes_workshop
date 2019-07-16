@@ -5,9 +5,11 @@ pip install jwcrypto
 ```
 Regenerate private key and JWKS (for developer use only.)
  1. Regenerate private key using openssl
+ 
            openssl genrsa -out key.pem 2048
 2. Run gen-jwt.py with --jkws to create new public key set and demo JWT
-              gen-jwt.py key.pem -jwks=./jwks.json --expire=3153600000 
+ 
+            gen-jwt.py key.pem -jwks=./jwks.json --expire=3153600000 
 
 ### Verifying #####
 1.  kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/shopping-ns.yaml
@@ -20,7 +22,9 @@ Regenerate private key and JWKS (for developer use only.)
 8. kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/jwtfile/shoppingportal-virtualservice-jwt.yaml
 
 
-curl http://35.238.229.131//productms/check/live -s -o /dev/null -w "%{http_code}\n"
+  curl http://35.238.229.131//productms/check/live -s -o /dev/null -w "%{http_code}\n"
+
+
  TOKEN=$(TOKEN=$(./gen-jwt.py key.pem --expire=300 --iss "testing@secure.istio.io")
 
 
