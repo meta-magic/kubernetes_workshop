@@ -31,4 +31,10 @@ spec:
           imagePullPolicy: Always
           ports:
           - containerPort: 8081
+      initContainers:
+        - name: init-eurekaserverservice
+          image: busybox
+          command:
+          - wget
+          - http://eurekaserverservice.shoppingportal.svc.cluster.local/eureka-server       
        

@@ -31,4 +31,9 @@ spec:
           imagePullPolicy: Always
           ports:
           - containerPort: 7070
-       
+      initContainers:
+        - name: init-configserverservice
+          image: busybox
+          command:
+          - wget
+          - http://configserverservice.shoppingportal.svc.cluster.local/configserver/eurekaserver/dev_env 
