@@ -1,0 +1,15 @@
+apiVersion: "authentication.istio.io/v1alpha1"
+kind: "Policy"
+metadata:
+  name: "jwt-auth"
+  namespace: shoppingportal
+spec:
+  targets:
+  - name: productservice
+  peers:
+  - mtls: {}
+  origins:
+  - jwt:
+      issuer: "testing@secure.istio.io"
+      jwksUri: https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/jwksnew.json
+  principalBinding: USE_ORIGIN
