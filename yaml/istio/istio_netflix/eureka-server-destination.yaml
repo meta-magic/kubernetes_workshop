@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: eureka-destination-rules
+  namespace: shoppingportal    
+spec:
+  host: eurekaserverservice.shoppingportal.svc.cluster.local

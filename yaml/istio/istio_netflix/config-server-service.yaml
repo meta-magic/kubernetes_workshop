@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: configserverservice
+  namespace: shoppingportal
+spec:
+  selector: 
+    name: configserver
+  ports:
+  - protocol: TCP
+    targetPort: 6061
+    port: 80
+    name: http
