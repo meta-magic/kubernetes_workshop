@@ -30,3 +30,6 @@ Mesh
 3. Beta Testing  using Canary
 4. Fault Injection
 5. Circuit Breaker
+6. JWT
+7. RBAC
+8. Application Tracing
