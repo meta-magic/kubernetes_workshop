@@ -15,6 +15,8 @@ Advanced Session
 4. AutoScaling
 5. Network Policy
 6. Inter Microservice Communication
+7. Multiple Version Deployment
+8. Canary Deployment
 
 Other Features
 
