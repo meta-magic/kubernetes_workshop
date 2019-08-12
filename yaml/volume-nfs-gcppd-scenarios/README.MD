@@ -8,3 +8,11 @@ This section focuses on testing Kubernetes Deployment and StatefulSets using var
 - Deployment 
 - StatefulSet
 
+The Test cases demonstrate various Access Modes for different File Systems and Block Devices and whats the behavior when you use Deployment and StatefulSets.
+
+- Read Write Once
+- Read Only Many
+- Read Write Many
+
+Deployment is ideally meant for Stateless Applications and you should use StatefulSet for Stateful Apps.
+
