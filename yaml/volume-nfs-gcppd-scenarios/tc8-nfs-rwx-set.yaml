@@ -36,10 +36,10 @@ spec:
         desire3d.io/managed-by: m2
     spec:
       volumes:
-        - name: nfs-1gb-disk
+        - name: pv-nfs-rwx-1gb-disk
           persistentVolumeClaim:
            # Local Storage Claim
-           claimName: pvc-nfs-rwm-1gb-disk   
+           claimName: pvc-nfs-rwx-1gb-disk   
       terminationGracePeriodSeconds: 60
       containers:
       - name: omega
@@ -48,5 +48,5 @@ spec:
         - containerPort: 80
           name: web
         volumeMounts:
-        - name: nfs-1gb-disk
+        - name:  pv-nfs-rwx-1gb-disk
           mountPath: /home/data
