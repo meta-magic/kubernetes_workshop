@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: nfs-statefulset
+  name: pv-nfs-rwm-3gb-disk
 spec:
   capacity:
     storage: 3Gi
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
   accessModes:
     - ReadWriteMany
   nfs:

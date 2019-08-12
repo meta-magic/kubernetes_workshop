@@ -1,0 +1,13 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-gce-pd-rwo-3gb-disk
+spec:
+  storageClassName: "sc-gce-pd-disk"
+  accessModes:
+    - ReadWriteOnce
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
+  resources:
+    requests:
+      storage: 3Gi

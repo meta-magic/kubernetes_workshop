@@ -1,10 +1,12 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: nfs
+  name: pvc-nfs-rwx-10gb-disk
 spec:
   accessModes:
     - ReadWriteMany
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
   storageClassName: ""
   resources:
     requests:

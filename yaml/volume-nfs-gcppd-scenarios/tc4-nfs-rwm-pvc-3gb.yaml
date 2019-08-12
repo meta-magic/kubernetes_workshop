@@ -1,0 +1,13 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-nfs-rwm-3gb-disk
+spec:
+  storageClassName: ""
+  accessModes:
+    - ReadWriteMany
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
+  resources:
+    requests:
+      storage: 3Gi

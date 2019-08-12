@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-nfs-rox-5gb-disk
+  name: pv-nfs-rwx-1gb-disk
 spec:
   capacity:
-    storage: 5Gi
+    storage: 1Gi
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteMany
   # Filesystem or Block (v1.13) Default = Filesystem
   volumeMode: Filesystem 
   nfs:

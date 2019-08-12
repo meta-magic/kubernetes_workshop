@@ -1,46 +1,40 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tc4-nfs-rwx-svc
+  name: tc3-gce-rwo-svc
   labels:
-    app: tc4-nfs-rwx-svc
+    app: tc3-gce-rwo-svc
 spec:
   ports:
   - port: 80
     name: web
   clusterIP: None
   selector:
-    desire3d.io/name: tc4-nfs-rwx-pod
+    desire3d.io/name: tc3-gce-rwo-pod
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: tc4-nfs-rwx-set
+  name: tc3-gce-rwo-set
 spec:
   selector:
     matchLabels:
-      # has to match .spec.selector.matchLabels
-      desire3d.io/name: tc4-nfs-rwx-pod
-  serviceName: "tc4-nfs-rwx-svc"
+      # has to match .spec.template.metadata.labels
+      desire3d.io/name: tc3-gce-rwo-pod
+  serviceName: "tc3-gce-rwo-svc"
   replicas: 3 # by default is 1
   template:
     metadata:
       labels:
-        app: omega # has to match .spec.selector.matchLabels
         # has to match .spec.selector.matchLabels
-        desire3d.io/name: tc4-nfs-rwx-pod
+        desire3d.io/name: tc3-gce-rwo-pod
         desire3d.io/version: "1.0.0"
         desire3d.io/release: stable
         desire3d.io/tier: be
         desire3d.io/zone: prod
         desire3d.io/managed-by: m2
     spec:
-      volumes:
-        - name: nfs-3gb-disk
-          persistentVolumeClaim:
-           # Local Storage Claim
-           claimName: pvc-nfs-rwm-3gb-disk   
-      terminationGracePeriodSeconds: 60
+      terminationGracePeriodSeconds: 10
       containers:
       - name: omega
         image: metamagic/oshell
@@ -48,5 +42,14 @@ spec:
         - containerPort: 80
           name: web
         volumeMounts:
-        - name: nfs-3gb-disk
+        - name: pvc-gce-pd-rwo-3gb-disk
           mountPath: /home/data
+  volumeClaimTemplates:
+  - metadata:
+      name: pvc-gce-pd-rwo-3gb-disk
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "sc-gce-pd-disk"
+      resources:
+        requests:
+          storage: 3Gi          

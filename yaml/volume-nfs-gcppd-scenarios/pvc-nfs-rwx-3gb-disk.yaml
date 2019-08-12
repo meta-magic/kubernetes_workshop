@@ -1,11 +1,13 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: nfs-pv-claim
+  name: pvc-nfs-rwx-3gb-disk
 spec:
-  storageClassName: ""
   accessModes:
     - ReadWriteMany
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
+  storageClassName: ""
   resources:
     requests:
       storage: 3Gi

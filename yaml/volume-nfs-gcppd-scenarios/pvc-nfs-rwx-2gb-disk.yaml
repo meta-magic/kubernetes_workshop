@@ -1,0 +1,13 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-nfs-rwx-2gb-disk
+spec:
+  accessModes:
+    - ReadWriteMany
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 2Gi

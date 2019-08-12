@@ -1,10 +1,12 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: nfs-tc2-pvc
+  name: pvc-nfs-rox-5gb-disk
 spec:
   accessModes:
     - ReadOnlyMany
+  # Filesystem or Block (v1.13) Default = Filesystem
+  volumeMode: Filesystem 
   storageClassName: ""
   resources:
     requests:

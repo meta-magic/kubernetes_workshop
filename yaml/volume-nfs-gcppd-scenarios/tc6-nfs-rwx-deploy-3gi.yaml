@@ -1,12 +1,12 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: tc2-nfs-rox-deploy
+  name: tc6-nfs-rwx-deploy-3gi
 spec:
   replicas: 3
   selector:
     matchLabels:
-      desire3d.io/name: tc2-nfs-rox-pod
+      desire3d.io/name: tc6-nfs-rwx-pod
   minReadySeconds: 10
   strategy:
     type: RollingUpdate
@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       labels:
-        desire3d.io/name: tc2-nfs-rox-pod
+        desire3d.io/name: tc6-nfs-rwx-pod
         desire3d.io/version: "1.0.0"
         desire3d.io/release: stable
         desire3d.io/tier: be
@@ -24,10 +24,10 @@ spec:
         desire3d.io/managed-by: m2
     spec:
       volumes:
-        - name: nfs-tc2-rox
+        - name: nfs-tc6-rwx-3gi
           persistentVolumeClaim:
            # Local Storage Claim
-           claimName: pvc-nfs-rox-5gb-disk
+           claimName: pvc-nfs-rwx-3gb-disk
       containers:
         - name: omega-dyn-ctr
           image: metamagic/oshell
@@ -40,4 +40,4 @@ spec:
           # Mount omega-volume-local from 
           # persistentVolumeClaim
             - mountPath: "/home/data"
-              name: nfs-tc2-rox
+              name: nfs-tc6-rwx-3gi

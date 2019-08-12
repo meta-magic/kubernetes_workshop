@@ -1,34 +1,34 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tc4-nfs-rwx-svc
+  name: tc8-nfs-rwx-svc
   labels:
-    app: tc4-nfs-rwx-svc
+    app: tc8-nfs-rwx-svc
 spec:
   ports:
   - port: 80
     name: web
   clusterIP: None
   selector:
-    desire3d.io/name: tc4-nfs-rwx-pod
+    desire3d.io/name: tc8-nfs-rwx-pod
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: tc4-nfs-rwx-set
+  name: tc8-nfs-rwx-set
 spec:
   selector:
     matchLabels:
       # has to match .spec.selector.matchLabels
-      desire3d.io/name: tc4-nfs-rwx-pod
-  serviceName: "tc4-nfs-rwx-svc"
+      desire3d.io/name: tc8-nfs-rwx-pod
+  serviceName: "tc8-nfs-rwx-svc"
   replicas: 3 # by default is 1
   template:
     metadata:
       labels:
         app: omega # has to match .spec.selector.matchLabels
         # has to match .spec.selector.matchLabels
-        desire3d.io/name: tc4-nfs-rwx-pod
+        desire3d.io/name: tc8-nfs-rwx-pod
         desire3d.io/version: "1.0.0"
         desire3d.io/release: stable
         desire3d.io/tier: be
@@ -36,7 +36,7 @@ spec:
         desire3d.io/managed-by: m2
     spec:
       volumes:
-        - name: nfs-3gb-disk
+        - name: nfs-1gb-disk
           persistentVolumeClaim:
            # Local Storage Claim
            claimName: pvc-nfs-rwm-3gb-disk   
@@ -48,5 +48,5 @@ spec:
         - containerPort: 80
           name: web
         volumeMounts:
-        - name: nfs-3gb-disk
+        - name: nfs-1gb-disk
           mountPath: /home/data
