@@ -40,7 +40,8 @@
 1. Volume AWS (Amazon Web Service)
 2. Volume GCE (Google Cloud Engine)
 3. Volume NFS (Network File System)
-4. Volume Host Machine
+4. Volume Azure Disk and Azure File system (Coming soon) 
+5. Volume Host Machine
 
 ## Helm Charts
 
