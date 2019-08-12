@@ -16,3 +16,9 @@ The Test cases demonstrate various Access Modes for different File Systems and B
 
 Deployment is ideally meant for Stateless Applications and you should use StatefulSet for Stateful Apps.
 
+## Test Cases - Deployment and StatefulSet: Volume Type File System
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/volume-Diagrams/K8s-Volume-1.jpg" alt="Test Cases 1-4" />
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/volume-Diagrams/K8s-Volume-2.jpg" alt="Test Cases 5-8" />
+
