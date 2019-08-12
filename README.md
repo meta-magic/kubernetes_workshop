@@ -16,7 +16,11 @@ Jenkins helps to create continuous integration and Continuous Delivery pipelines
 
 Microservices Architecture adds complexity in terms of management, monitoring etc., which put the brakes on developers mindset when they want to switch over from Monolithic to Microservices based Architecture. Service Mesh helps over here along with Kubernetes with the Sidecar Pattern to streamline and simplify the communication, management, and monitoring of the Microservices.
 
-<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day-Schedule.jpg" alt="2 Day Kubernetes Workshop Schedule" />
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day-1-WS.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 1" />
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day2.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 2" />
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day3.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 3" />
 
 ## Shopping Portal Architecture - Kubernetes without Istio
 
