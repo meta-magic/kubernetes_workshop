@@ -1,0 +1,43 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: tc1-gcp-pd-rwo-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      desire3d.io/name: tc1-gcp-pd-rwo-pod
+  minReadySeconds: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        desire3d.io/name: tc1-gcp-pd-rwo-pod
+        desire3d.io/version: "1.0.0"
+        desire3d.io/release: stable
+        desire3d.io/tier: be
+        desire3d.io/zone: prod
+        desire3d.io/managed-by: m2
+    spec:
+      volumes:
+        - name: gcp-pd-tc1-rwo
+          persistentVolumeClaim:
+           # Local Storage Claim
+           claimName: pvc-gce-pd-rwo-3gb-disk-tc1
+      containers:
+        - name: omega-dyn-ctr
+          image: metamagic/oshell
+          env:
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+          volumeMounts:
+          # Mount omega-volume-local from 
+          # persistentVolumeClaim
+            - mountPath: "/home/data"
+              name: gcp-pd-tc1-rwo
