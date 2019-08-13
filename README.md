@@ -16,13 +16,43 @@ Jenkins helps to create continuous integration and Continuous Delivery pipelines
 
 Microservices Architecture adds complexity in terms of management, monitoring etc., which put the brakes on developers mindset when they want to switch over from Monolithic to Microservices based Architecture. Service Mesh helps over here along with Kubernetes with the Sidecar Pattern to streamline and simplify the communication, management, and monitoring of the Microservices.
 
+## Workshop Schedule - Daywise Details
+
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day-1-WS.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 1" />
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day2.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 2" />
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/images/K8s-Day3.jpg" alt="3 Day Kubernetes Workshop Schedule - Day 3" />
 
-## Shopping Portal Architecture - Kubernetes without Istio
+## Linux Containers 
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Linux-Containers.jpg" lt="Linux Containers" />
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Docker-Linux-Win.jpg" lt="Linux and Windows Containers" />
+
+
+## Kubernetes
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Arch.jpg" alt="Kubernetes Architecture" />
+
+### Kubernetes - Load Balancer, Node Port, Cluster IP and Ingress
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-LB-NodePort-ClusterIP.jpg" alt="Kubernetes Architecture" />
+
+### Kubernetes - Network Policies
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Network-Policy.jpg" alt="Kubernetes Network Policies" />
+
+### Kubernetes - Container Network Interface - Comparison
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-CNI-Comparison.jpg" alt="Kubernetes Network Policies" />
+
+
+## Istio Components
+
+<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Istio-Components.jpg" alt="Istio Components" />
+
+### Shopping Portal Architecture - Kubernetes without Istio
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-1.jpg" alt="Shopping Portal Architecture" />
 
@@ -35,7 +65,7 @@ To deploy Microservices example in kubernetes with ingress controller, simpliy r
  You can deploy new version of app using [k8_workshop_v1.1.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_v1.1.sh). Also if you want to test canary deployment without Istio you can execute [k8_workshop_canary_with_v1.0.sh](https://github.com/meta-magic/kubernetes_workshop/blob/master/k8_workshop_canary_with_v1.0.sh), this will show different version of UI in round robin fashion.
 
 
-## Shopping Portal Architecture - Kubernetes with Istio
+### Shopping Portal Architecture - Kubernetes with Istio
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-2.jpg" alt="Shopping Portal Architecture with Istio" />
 
@@ -46,35 +76,25 @@ To deploy Microservices example in kubernetes with Istio, simpliy run [k8_worksh
  - [Gateway](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-gw.yaml)
  - [Virtual Service](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/shoppingportal-virtualservice.yaml)
  
-## Shopping Portal Architecture - Kubernetes with Istio : A/B Testing using Canary Deployment
+### Shopping Portal Architecture - Kubernetes with Istio : A/B Testing using Canary Deployment
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-3.jpg" alt="Shopping Portal Architecture with Istio : A/B Testing" />
 
-## Shopping Portal Architecture - Kubernetes with Istio : Beta Testing using Canary Deployment
+### Shopping Portal Architecture - Kubernetes with Istio : Beta Testing using Canary Deployment
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-4.jpg" alt="Shopping Portal Architecture with Istio : Beta Testing" />
 
-## Shopping Portal Architecture - Kubernetes with Istio : Blue Green Deployment
+### Shopping Portal Architecture - Kubernetes with Istio : Blue Green Deployment
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-5.jpg" alt="Shopping Portal Architecture with Istio : Blue Green Deployment" />
 
-## Shopping Portal Architecture - Kubernetes with Istio : Fault Injection
+### Shopping Portal Architecture - Kubernetes with Istio : Fault Injection
 
 <img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Demo-6.jpg" alt="Shopping Portal Architecture with Istio : Fault Injection" />
 
- #### More details on ISTIO deployment click [here](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/)
+### More details on ISTIO deployment click [here](https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/istio/)
 
-## Kubernetes
 
-<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/K8s-Arch.jpg" alt="Kubernetes Architecture" />
-
-## Istio Components
-
-<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Istio-Components.jpg" alt="Istio Components" />
-
-## Linux Containers 
-
-<img src="https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/diagrams/Linux-Containers.jpg" lt="Linux Containers" />
 
 ## License
 
