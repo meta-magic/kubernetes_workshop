@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         name: k8uiworkshop
-        version: "1.0.0"
+        version: "2.0.0"
         release: stable
         tier: fe
         zone: prod
@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: k8uiworkshop-ctr-canary
-          image: metamagicglobal/k8uiworkshop:v1.0
+          image: metamagicglobal/k8uiworkshop:v1.1
           imagePullPolicy: Always
           ports:
           - containerPort: 80
