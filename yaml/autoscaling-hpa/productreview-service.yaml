@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: productreviewservice
-  namespace: shoppingportal
+  namespace: shoppingportal-hpa
 spec:
   type: NodePort
   selector: 
