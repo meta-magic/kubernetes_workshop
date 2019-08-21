@@ -25,6 +25,7 @@ openssl genrsa -out key.pem 2048
 
 
 curl http://35.238.229.131//productms/check/live -s -o /dev/null -w "%{http_code}\n"
+
  TOKEN=$(TOKEN=$(./gen-jwt.py key.pem --expire=300 --iss "testing@secure.istio.io")
 
 
