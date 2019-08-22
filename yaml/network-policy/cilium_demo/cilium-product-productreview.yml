@@ -1,0 +1,23 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: productreviews
+  namespace: shoppingportal
+specs:
+  - endpointSelector:
+      matchLabels:
+         zone: prod
+         app: productreviewms 
+    ingress:
+    - fromEndpoints:
+      - matchLabels:
+          zone: prod
+          app: productms
+      toPorts:
+      - ports:
+        - port: "80"
+          protocol: TCP
+        rules:
+          http:
+          - method: POST
+            path: "/productreviewms/[0-9]*"
