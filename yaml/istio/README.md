@@ -4,9 +4,9 @@
 Cloud platforms provide a wealth of benefits for the organizations that use them. There’s no denying, however, that adopting the cloud can put strains on DevOps teams. Developers must use microservices to architect for portability, meanwhile operators are managing extremely large hybrid and multi-cloud deployments. Istio lets you connect, secure, control, and observe services.
 
 ## Setup (https://istio.io/docs/setup/kubernetes/install/kubernetes/)
-- wget https://github.com/istio/istio/releases/download/1.2.4/istio-1.2.4-linux.tar.gz
-- tar -xzvf istio-1.2.4-linux.tar.gz
-- cd istio-1.2.4
+- wget https://github.com/istio/istio/releases/download/1.0.2/istio-1.0.2-linux.tar.gz
+- tar -xzvf istio-1.0.2-linux.tar.gz
+- cd istio-1.0.2
 - echo 'export PATH="$PATH:/home/ubuntu/istio-1.2.4/bin"' >> ~/.profile
 - type "istioctl" to confirm path is setup properly
 
@@ -16,17 +16,17 @@ Cloud platforms provide a wealth of benefits for the organizations that use them
 Apply CRDs:
 
 ```
-$ for i in ~/istio-1.2.4/install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/helm/istio/templates/crds.yaml
 ```
 Wait a few seconds.
 
 Option 1: with no mutual TLS authentication
 ```
-$ kubectl apply -f ~/istio-1.2.4/install/kubernetes/istio-demo.yaml
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo.yaml
 ```
 Option 2: or with mutual TLS authentication
 ```
-$ kubectl apply -f ~/istio-1.2.4/install/kubernetes/istio-demo-auth.yaml
+$ kubectl apply -f ~/istio-1.0.2/install/kubernetes/istio-demo-auth.yaml
 ```
 
 #### Installation Verification
