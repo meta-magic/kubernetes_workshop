@@ -1,0 +1,21 @@
+apiVersion: "rbac.istio.io/v1alpha1"
+kind: ServiceRole
+metadata:
+  name: productservice-viewer
+  namespace: shoppingportal
+spec:
+  rules:
+  - services: ["productservice.shoppingportal.svc.cluster.local"]
+    methods: ["GET"]
+---
+apiVersion: "rbac.istio.io/v1alpha1"
+kind: ServiceRoleBinding
+metadata:
+  name: bind-productservice-viewer
+  namespace: shoppingportal
+spec:
+  subjects:
+  - user: "*"
+  roleRef:
+    kind: ServiceRole
+    name: "productservice-viewer"

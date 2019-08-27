@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: productms-sa
+  namespace: shoppingportal
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: productreviewms-sa
+  namespace: shoppingportal  
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ui-sa
+  namespace: shoppingportal  
