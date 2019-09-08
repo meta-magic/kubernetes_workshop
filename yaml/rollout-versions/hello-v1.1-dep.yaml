@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-deploy
   namespace: helloworld
-  annotation:
+  annotations:
     kubernetes.io/change-cause: image-update 
 spec:
   replicas: 3
