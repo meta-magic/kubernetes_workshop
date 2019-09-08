@@ -9,7 +9,7 @@ metadata:
     version: v2
 spec:
   containers:
-  - name: hellotwo-cntr
+  - name: hello-cntr
     image: metamagicglobal/hello:v1.1
     imagePullPolicy: IfNotPresent
     ports:
