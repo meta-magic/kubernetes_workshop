@@ -14,7 +14,7 @@
 echo " MAKE SURE YOU HAVE EXECUTED BELOW YAML BEFORE..."
 
 echo "Delete Virtual Service in k8"
-kubectl delete -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/shoppingportal-virtualservice.yaml
+kubectl delete -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/Service-Mesh-1-Routing/shoppingportal-virtualservice.yaml
 
 echo "Delete Gateway  in k8"
 kubectl delete -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/shoppingportal-gw.yaml
