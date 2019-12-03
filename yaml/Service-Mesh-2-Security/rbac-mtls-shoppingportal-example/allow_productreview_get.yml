@@ -15,7 +15,7 @@ metadata:
   namespace: shoppingportal
 spec:
   subjects:
-  - user: "cluster.local/ns/shoppingportal/sa/productms-sa"
+  - user: "*"
   roleRef:
     kind: ServiceRole
     name: "productreviewservice-viewer"

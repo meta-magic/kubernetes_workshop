@@ -11,5 +11,5 @@ spec:
   origins:
   - jwt:
       issuer: "testing@secure.istio.io"
-      jwksUri: https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/istio/jwksnew.json
+      jwksUri: https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/Service-Mesh-2-Security/jwksnew.json
   principalBinding: USE_ORIGIN
