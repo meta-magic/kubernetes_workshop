@@ -4,18 +4,18 @@ metadata:
   name: hello-rs
   namespace: helloworld
   labels:
-    app: hello
+    app: hello-rs
     zone: prod
     vesrion: v1
 spec:
   replicas: 3
   selector:
      matchLabels:
-       app: hello
+       app: hello-rs
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-rs
     spec:
        containers:
          - name: hello-cntr-rs

@@ -7,7 +7,7 @@ metadata:
     app: hello-lb-svc
 spec:
   selector:
-    app: hello
+    app: hello-rs
   type: LoadBalancer
   ports:
    - port: 80
