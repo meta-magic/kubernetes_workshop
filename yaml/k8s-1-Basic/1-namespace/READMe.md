@@ -9,7 +9,7 @@ kubectl get namespaces
 
 #### Create new namespace
 ````
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/namespace/shoppiny-ns.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/9-app-2-shopping-portal/shoppiny-ns.yaml
 ````
 
 New namespace "shoppingportal" added

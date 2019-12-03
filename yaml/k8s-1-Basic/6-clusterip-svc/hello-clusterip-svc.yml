@@ -5,7 +5,7 @@ metadata:
   namespace: helloworld
 spec:
   selector:
-    app: hello
+    app: hello-cip
   ports:
   - protocol: TCP
     port: 80

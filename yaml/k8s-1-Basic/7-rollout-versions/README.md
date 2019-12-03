@@ -10,12 +10,12 @@
 
 create first deployment
 
-1. kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/rollout-versions/hello-dep.yml
+1. kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/7-rollout-versions/hello-dep.yml
 
 create the svc
 
-2.kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/rollout-versions/hello-svc.yml
-
+2.kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/7-rollout-versions/hello-svc.yml
+;;
 ## verify 
  
  acessing the url in the browser
@@ -30,7 +30,7 @@ To see the Deployment rollout history, run
 
 apply second deployment
 
-5.kubectl apply -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/rollout-versions/hello-v1.1-dep.yaml
+5.kubectl apply -f  https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/7-rollout-versions/hello-v1.1-dep.yaml
 
 To check To see the Deployment rollout history, run 
 
