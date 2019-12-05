@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prod
+  namespace: networking
+  labels:
+    zone: prod
+    name: prod-app
+spec:
+  containers:
+  - name: prod
+    image: metamagic/oshell
+    imagePullPolicy: IfNotPresent

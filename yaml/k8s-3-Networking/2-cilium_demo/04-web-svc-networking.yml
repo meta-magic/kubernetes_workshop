@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+  namespace: networking
+spec:
+  selector: 
+    name: web
+  ports:
+  - protocol: TCP
+    targetPort: 80
+    port: 80
+    name: http

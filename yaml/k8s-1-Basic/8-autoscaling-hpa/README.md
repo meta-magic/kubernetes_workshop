@@ -4,13 +4,13 @@ The Horizontal Pod Autoscaler automatically scales the number of pods in a repli
 
 Note: Make sure you have shoppingportal namespace
 
-#### Enable metric service before proceeding further, more detail can be found [metric-server](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/metrics_grafana)
+#### Enable metric service before proceeding further, more detail can be found [metric-server](https://github.com/meta-magic/kubernetes_workshop/tree/master/yaml/Logging-Monitoring/metrics_grafana)
 
 Execute below YAML
 ````
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/productreview-deployment.yaml
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/productreview-service.yaml (Have set deployment with cpu and memory confugration)
-kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/autoscaling-hpa/product-horizontal-scaler.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/8-autoscaling-hpa/productreview-deployment.yaml
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/8-autoscaling-hpa/productreview-service.yaml (Have set deployment with cpu and memory confugration)
+kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-1-Basic/8-autoscaling-hpa/product-horizontal-scaler.yaml
 ````
 
 Generate request using below command

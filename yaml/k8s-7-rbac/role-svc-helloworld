@@ -9,6 +9,7 @@ rules:
   resources:
   - pods 
   - deployments
+  - services
   verbs:
   - get
   - list

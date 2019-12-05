@@ -7,7 +7,7 @@ block-np.yml:
      for that: 
      1) create a pod inside a policy-demo namespace.
      
-      kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/network-policy/pod-np.yml
+      kubectl create -f pod-np.yml
      
      2) Create the Service.
      kubectl expose --namespace=policy-demo pod nginx --port=80

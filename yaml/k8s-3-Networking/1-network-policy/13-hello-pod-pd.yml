@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  namespace: policy-demo
+  labels:
+    app: hello
+    zone: prod
+    version: v1
+spec:
+  containers:
+  - name: hello-cntr
+    image: metamagicglobal/hello:v1.0
+    imagePullPolicy: IfNotPresent
+    ports:
+     - containerPort: 80

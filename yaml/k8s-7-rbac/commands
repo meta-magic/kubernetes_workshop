@@ -1,0 +1,8 @@
+ kubectl auth can-i get pods --as system:serviceaccount:helloworld:helloworld-sa -n helloworld
+
+
+ kubectl auth can-i  delete pods --as system:serviceaccount:helloworld:helloworld-sa -n helloworld
+
+
+ kubectl auth can-i get svc --as system:serviceaccount:helloworld:helloworld-sa -n helloworld
+

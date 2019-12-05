@@ -1,0 +1,12 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  namespace: networking
+  name: web-allow-all-namespaces
+spec:
+  podSelector:
+    matchLabels:
+      name: web
+  ingress:
+  - from:
+    - namespaceSelector: {}

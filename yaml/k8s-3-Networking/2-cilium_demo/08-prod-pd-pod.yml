@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: prod
+  namespace: policy-demo
+  labels:
+    name: prod
+spec:
+  containers:
+  - name: prod
+    image: metamagic/oshell
+    imagePullPolicy: IfNotPresent
