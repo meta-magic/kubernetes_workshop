@@ -14,9 +14,11 @@ The Helm client can be installed either from source, or from pre-built binary re
  # Installing Tiller
 Tiller is a companion to the helm command that runs on your cluster
 
-1) create service account for tiller
+1) create service account for tiller:
 
 kubectl create -f https://github.com/meta-magic/kubernetes_workshop/blob/master/yaml/k8s-6-helm_charts/sa-tiller.yml
+
+
 2) bind the tiller serviceaccount to the cluster-admin role:
 
 kubectl create -f https://raw.githubusercontent.com/meta-magic/kubernetes_workshop/master/yaml/k8s-6-helm_charts/cluster-role-binding-tiller.yml
