@@ -28,7 +28,7 @@ spec:
         desire3d.io/managed-by: m2
     spec:
       containers:
-        - name: hello-ctr-2
+        - name: hello-ctr-1
           image: metamagicglobal/hello:v1.1
           imagePullPolicy: IfNotPresent
           ports:
