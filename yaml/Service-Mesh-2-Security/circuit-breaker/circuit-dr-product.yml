@@ -4,7 +4,7 @@ metadata:
   name: circuit-dr-product
   namespace: shoppingportal    
 spec:
-  host: productreviewms.shoppingportal.svc.cluster.local
+  host: productreviewservice.shoppingportal.svc.cluster.local
   trafficPolicy:
     connectionPool:
       tcp:
